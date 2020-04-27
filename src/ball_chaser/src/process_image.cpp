@@ -39,13 +39,13 @@ void process_image_callback(const sensor_msgs::Image img)
 		if(white_pixel == img.data[i]) {
 			int col = (i % img.step) / 3;
 			if(col < max_left) {
-				drive_robot(0.0, 0.5);    // Move to the left
+				drive_robot(0.1, 0.7);    // Move to the left
 				return;
 			} else if(col > max_right) {
-				drive_robot(0.0, -0.5);   // Move right
+				drive_robot(0.1, -0.7);   // Move right
 				return;
 			} else {
-				drive_robot(0.5, 0.0);    // Move forward
+				drive_robot(0.8, 0.0);    // Move forward
 				return;
 			}
 		}
