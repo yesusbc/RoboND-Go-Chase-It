@@ -14,16 +14,16 @@ Defines mobile robot URDF as well as the world.
 Contains 2 nodes, one responsible for locating the position of the white ball, and the second for sending the respective command to follow the white ball.
 
 Inside src/ folder:
-   src/                          # Go Chase It Project
+   src/                          # Go Chase It Project  
     ├── my_robot                       # my_robot package                   
-    │   ├── launch                     # launch folder for launch files   
-    │   │   ├── robot_description.launch
-    │   │   ├── world.launch
-    │   ├── meshes                     # meshes folder for sensors
-    │   │   ├── hokuyo.dae
-    │   ├── urdf                       # urdf folder for xarco files
-    │   │   ├── my_robot.gazebo
-    │   │   ├── my_robot.xacro
+    │   ├── launch                     # launch folder for launch files  
+    │   │   ├── robot_description.launch  
+    │   │   ├── world.launch  
+    │   ├── meshes                     # meshes folder for sensors  
+    │   │   ├── hokuyo.dae  
+    │   ├── urdf                       # urdf folder for xarco files  
+    │   │   ├── my_robot.gazebo  
+    │   │   ├── my_robot.xacro  
     │   ├── world                      # world folder for world files
     │   │   ├── <yourworld>.world
     │   ├── CMakeLists.txt             # compiler instructions
