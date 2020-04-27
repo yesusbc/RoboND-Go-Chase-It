@@ -27,6 +27,6 @@ Contains 2 nodes, one responsible for locating the position of the white ball, a
 `roslaunch ball_chaser ball_chaser.launch`
 
 
-# Notes
+### Notes
 It's recommended to update and upgrade your environment before running the code.
 `sudo apt-get update && sudo apt-get upgrade -y`
