@@ -15,15 +15,15 @@ Contains 2 nodes, one responsible for locating the position of the white ball, a
 
 ### Build and Run the Project:
 
-* 1. `git clone` the repository inside your catkin workspace
+* `git clone` the repository inside your catkin workspace
 
-* 2. Source the workspace
+* Source the workspace
 `source devel/setup.bash`
 
-* 3. Launch world and robot
+* Launch world and robot
 `roslaunch my_robot world.launch`
 
-* 4. To make the robot chase the white ball, open another terminal, navigate to your catking worspace, source it, and then execute:
+* To make the robot chase the white ball, open another terminal, navigate to your catking worspace, source it, and then execute:
 `roslaunch ball_chaser ball_chaser.launch`
 
 
