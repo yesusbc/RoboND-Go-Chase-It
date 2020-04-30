@@ -35,22 +35,42 @@ void process_image_callback(const sensor_msgs::Image img)
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
     // Request a stop when there's no white ball seen by the camera
 
-	for(int i = 0; i < img.height * img.step; ++i) {
-		if(white_pixel == img.data[i]) {
-			int col = (i % img.step) / 3;
-			if(col < max_left) {
-				drive_robot(0.1, 0.7);    // Move to the left
-				return;
-			} else if(col > max_right) {
-				drive_robot(0.1, -0.7);   // Move right
-				return;
-			} else {
-				drive_robot(0.8, 0.0);    // Move forward
-				return;
+	int white_left = 0;
+	int white_right = 0;
+	int white_forward = 0;
+	int x_position = 0;
+
+	for(int i = 0; i < img.height * img.step; i+=3) {
+		if(white_pixel == img.data[i] && 
+			white_pixel == img.data[i+1] &&
+			white_pixel == img.data[i+2]) {
+
+			x_position = (i % img.step) / 3;
+
+			if (x_position < max_left)
+			{
+			   white_left += 1;
+			} else if (x_position > max_right)
+			{
+				white_right += 1;
+			} else
+			{
+				white_forward += 1;
 			}
 		}
 	}
-	drive_robot(0.0, 0.0);  // Stop
+	if(white_left > white_right && white_left > white_forward) 
+	{
+		drive_robot(0, 1);    // Move to the left
+	} else if (white_right > white_left && white_right > white_forward)
+	{
+		drive_robot(0, -1);    // Move to the right
+	} else if (white_forward > white_left && white_forward > white_right)
+	{
+		drive_robot(0.8, 0.0);    // Move forward
+	} else{
+		drive_robot(0.0, 0.0); // stop
+	}		
 }
 
 
