@@ -30,15 +30,15 @@ void process_image_callback(const sensor_msgs::Image img)
 	const int max_left = img.width /3;
 	const int max_right = 2 * img.width /3;
 
-    // TODO: Loop through each pixel in the image and check if there's a bright white one
-    // Then, identify if this pixel falls in the left, mid, or right side of the image
-    // Depending on the white ball position, call the drive_bot function and pass velocities to it
-    // Request a stop when there's no white ball seen by the camera
-
 	int white_left = 0;
 	int white_right = 0;
 	int white_forward = 0;
 	int x_position = 0;
+
+    // TODO: Loop through each pixel in the image and check if there's a bright white one
+    // Then, identify if this pixel falls in the left, mid, or right side of the image
+    // Depending on the white ball position, call the drive_bot function and pass velocities to it
+    // Request a stop when there's no white ball seen by the camera
 
 	for(int i = 0; i < img.height * img.step; i+=3) {
 		if(white_pixel == img.data[i] && 
@@ -59,6 +59,7 @@ void process_image_callback(const sensor_msgs::Image img)
 			}
 		}
 	}
+
 	if(white_left > white_right && white_left > white_forward) 
 	{
 		drive_robot(0, 1);    // Move to the left
@@ -70,7 +71,8 @@ void process_image_callback(const sensor_msgs::Image img)
 		drive_robot(0.8, 0.0);    // Move forward
 	} else{
 		drive_robot(0.0, 0.0); // stop
-	}		
+	}
+
 }
 
 

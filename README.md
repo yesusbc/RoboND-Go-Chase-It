@@ -1,7 +1,7 @@
 # Go Chase It
 ## Robotics Nanodegree
 
-<img src="https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/gochaseit1.png" width="793" height="450">
+<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/gochaseit3.png" width="793" height="450">
 This project involves designing and building a mobile robot that is capable of chasing and following white colored balls.
 
 ### Structure
