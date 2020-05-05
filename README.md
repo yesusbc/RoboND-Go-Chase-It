@@ -1,5 +1,29 @@
-# Go Chase It
+# Where Am I & Go Chase It (Localization and ROS Essentials)
 ## Robotics Nanodegree
+
+## Where Am I Feature
+<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/whereami.png" width="793" height="450">
+This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
+
+## Previous Installation
+```sudo apt-get install ros-kinetic-navigation
+sudo apt-get install ros-kinetic-map-server
+sudo apt-get install ros-kinetic-move-base
+sudo apt-get install ros-kinetic-amcl```
+
+### Testing
+#### Teleop Node
+You could use teleop node to control your robot and observe it localize itself in the environment.
+
+Open another terminal and launch the teleop script:
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+#### 2D Navigation Goal
+Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to send the goal to the robot. It will start moving and localize itself in the process.
+
+
+## Go Chase It Feature
 
 <img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/gochaseit3.png" width="793" height="450">
 This project involves designing and building a mobile robot that is capable of chasing and following white colored balls.
