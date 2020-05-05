@@ -6,10 +6,10 @@
 This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
 ## Previous Installation
-```sudo apt-get install ros-kinetic-navigation
-sudo apt-get install ros-kinetic-map-server
-sudo apt-get install ros-kinetic-move-base
-sudo apt-get install ros-kinetic-amcl```
+`sudo apt-get install ros-kinetic-navigation`
+`sudo apt-get install ros-kinetic-map-server`
+`sudo apt-get install ros-kinetic-move-base`
+`sudo apt-get install ros-kinetic-amcl`
 
 ### Testing
 #### Teleop Node
