@@ -2,7 +2,7 @@
 ## Robotics Nanodegree
 
 ## Where Am I Feature
-<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/whereami.png" width="793" height="450">
+<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/whereAmIPic.png" width="793" height="450">
 This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
 ## Previous Installation
