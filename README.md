@@ -1,6 +1,24 @@
 # Where Am I & Go Chase It (Localization and ROS Essentials)
 ## Robotics Nanodegree
 
+## Map My World Feature
+To test the `rtabmap_ros` package, launch the world.
+
+Then launch `mapping.launch`to start RTABMAP.
+Then run the `teleop_key` package, in order to start creating the map.
+
+At the end you must result with something like this:
+<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map3.png" width="793" height="450">
+
+And the final map, should be something like this:
+<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map2.png" width="793" height="450">
+
+Database must be located at `~/.ros/rtabmap.db`
+
+To analyze it, run
+	`rtabmap-databaseViewer src/my_robot/db/rtabmap.db`
+
+
 ## Where Am I Feature
 <img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/visualize/whereAmIPic.png" width="793" height="450">
 This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
