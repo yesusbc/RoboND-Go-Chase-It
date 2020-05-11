@@ -2,7 +2,7 @@
 ## Robotics Nanodegree
 
 ## Where Am I Feature
-<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/whereAmIPic.png" width="793" height="450">
+<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/visualize/whereAmIPic.png" width="793" height="450">
 This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
 ## Previous Installation
@@ -25,7 +25,7 @@ Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to
 
 ## Go Chase It Feature
 
-<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/gochaseit3.png" width="793" height="450">
+<img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/visualize/gochaseit3.png" width="793" height="450">
 This project involves designing and building a mobile robot that is capable of chasing and following white colored balls.
 
 ### Structure
