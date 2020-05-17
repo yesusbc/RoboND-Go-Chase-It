@@ -1,5 +1,4 @@
-# Where Am I & Go Chase It (Localization and ROS Essentials)
-## Robotics Nanodegree
+# Robotics Nanodegree
 This repo contains the related projects for the Udacity Robotics Software Engineer Nanodegree.
 
 The project was divided in 
