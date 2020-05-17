@@ -1,5 +1,5 @@
 # Robotics Nanodegree
-This repo contains the related projects for the Udacity Robotics Software Engineer Nanodegree.
+This repo contains the related projects for the Udacity's Robotics Software Engineer Nanodegree.
 
 The project was divided in 
 * Part 1: `Build My World`: Designed a Gazebo World Environment for the upcoming parts.
@@ -42,24 +42,7 @@ Contains 2 nodes, one responsible for locating the position of the white ball, a
 <img src= "https://github.com/yesusbc/RoboND-Go-Chase-It/blob/master/visualize/whereAmIPic.png" width="793" height="450">
 This feature uses ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
-## Map My World Feature (Part 4)
-To test the `rtabmap_ros` package, launch the world.
-
-Then launch `mapping.launch`to start RTABMAP.
-Then run the `teleop_key` package, in order to start creating the map.
-
-At the end you must result with something like this:
-<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map3.png" width="793" height="450">
-
-And the final map, should be something like this:
-<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map2.png" width="793" height="450">
-
-Database must be located at `~/.ros/rtabmap.db`
-
-To analyze it, run
-	`rtabmap-databaseViewer src/my_robot/db/rtabmap.db`
-
-## Previous Installation
+### Previous Installation
 `sudo apt-get install ros-kinetic-navigation`
 
 `sudo apt-get install ros-kinetic-map-server`
@@ -67,7 +50,6 @@ To analyze it, run
 `sudo apt-get install ros-kinetic-move-base`
 
 `sudo apt-get install ros-kinetic-amcl`
-
 
 ### Testing
 #### Teleop Node
@@ -79,6 +61,23 @@ Open another terminal and launch the teleop script:
 
 #### 2D Navigation Goal
 Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to send the goal to the robot. It will start moving and localize itself in the process.
+
+## Map My World Feature (Part 4)
+To test the `rtabmap_ros` package, launch the world.
+
+Then launch `mapping.launch`to start RTABMAP.
+Then run the `teleop_key` package in order to start creating the map.
+
+At the end you must result with something like this:
+<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map3.png" width="793" height="450">
+
+And the final map, should be something like this:
+<img src= "https://github.com/yesusbc/Robotics-ND/blob/master/visualize/map2.png" width="793" height="450">
+
+Database must be located at `~/.ros/rtabmap.db`
+
+To analyze it, run
+	`rtabmap-databaseViewer src/my_robot/db/rtabmap.db`
 
 
 ### Notes
